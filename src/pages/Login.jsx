@@ -1,6 +1,7 @@
 import { useState } from "react";
 import api from "../api/api";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 
 function Login() {
@@ -73,6 +74,21 @@ function Login() {
                 <button type="submit">
                     Entrar
                 </button>
+
+                Ainda não tem conta?
+               <button 
+                     type="button"
+                        onClick={() => navigate("/cadastro")}
+>
+                     Criar cadastro
+                </button>
+
+                <p>
+                    Ainda não possui empresa?
+                <Link to="/cadastro-empresa">
+  Cadastre-se
+                </Link>
+                </p>
 
             </form>
 
