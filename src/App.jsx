@@ -1,13 +1,9 @@
-import Login from "./pages/Login";
+import AppRoutes from "./routes/AppRoutes.jsx";
 
-function App(){
+function App() {
     return (
-        <Login/>
+        <AppRoutes />
     );
 }
 
-
-
 export default App;
-
-
